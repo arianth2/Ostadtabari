@@ -23,14 +23,52 @@
 <img src="p194842_b1t_v9_ab.jpg" width="400" height="500">
 </div>
 &nbsp;
-<div align="center">
-    <button type="button"onclick="location.href='http://www.google.com/search?q=Bryan+Cranston&client=firefox-b-d&cs=0&hl=en-US&source=lnms&tbm=isch&sa=X&ved=2ahUKEwicxMqe7tX7AhX7i_0HHUZYDtMQ_AUoAXoECAIQAw&biw=1600&bih=775&dpr=1#imgrc=NNt-C4lCvI9-HM'"  style="background-color:rgb(199, 0, 0);font-size:45px">MR.Heisenberg</button>
-</div>
-<div dir="ltr">
-    <button type="button"onclick="location.href='http://www.google.com/search?q=Aaron+Paul+comedy&client=firefox-b-d&cs=0&source=lnms&tbm=isch&sa=X&ved=2ahUKEwioqIqs8NX7AhXk_rsIHUtrAoUQ_AUoAnoECAIQBA&biw=1600&bih=775&dpr=1#imgrc=xicDne1iRSFs-M'"  style="background-color:rgb(42, 248, 15);font-size:40px">Jesse</button>
-</div>
-<div dir="rtl">
-    <button type="button"onclick="location.href='http://www.google.com/search?q=Giancarlo+Esposito&client=firefox-b-d&cs=0&stick=H4sIAAAAAAAAAONgFuLSz9U3ME4xNqmwUOIEsS0MzHNztMSyk630S8qAKL6gKD-9KDHXKjmxuGQRq5B7ZmJecmJRTr6Ca3FBfnFmST4AttASk0YAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj84Oji7dX7AhXoh_0HHQPrAdQQ_AUoAXoECAMQAw&biw=1600&bih=775&dpr=1#imgrc=x08dcwBS76s0xM'"  style="background-color:rgb(216, 109, 9);font-size:40px">Gus</button>
+ 
+
+	    <div align="center">
+       <button class="play-audio" type="button" style="background-color:rgb(199, 0, 0);font-size:45px">MR.Heisenberg</button>
+      </div>
+  
+     <div align="center">
+      <button class="play-audio2" type="button" style="background-color:rgb(134, 255, 53);font-size:45px">Jesse</button>
+     </div>
+  
+
+     <div align="center">
+     <button class="play-audio3" type="button" style="background-color:rgb(255, 105, 36);font-size:45px">Gus</button>
+    </div>
+    
+   <script>
+    const button = document.querySelector(".play-audio")
+    button.addEventListener("click" , playAudio)
+    function playAudio(){
+    const audio = document.createElement("audio");
+    audio.autoplay = true;
+    audio.setAttribute("src", "./walter.aac");
+    }
+
+    const button2 = document.querySelector(".play-audio2")
+    button2.addEventListener("click" , playAudio2)
+    function playAudio2(){
+    const audio = document.createElement("audio");
+    audio.classList.add("audio2")
+    audio.autoplay = true;
+    audio.setAttribute("src", "./jesse.aac");
+    }
+    const button3 = document.querySelector(".play-audio3")
+    button3.addEventListener("click" , playAudio3)
+    function playAudio3(){
+    const audio = document.createElement("audio");
+    audio.autoplay = true;
+    audio.classList.add= "audio3";
+    audio.setAttribute("src", "./gus.aac");
+    }
+   </script>
+	
+
+	
+	
+	
 &nbsp;&nbsp;
         </div>
     <marquee scrollamount="11" behavior="alternate"   direction="left"><img src="Walter_White_S5B.png" width="270" height="250"></marquee>
