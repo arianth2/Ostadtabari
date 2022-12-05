@@ -86,9 +86,19 @@
 }
 
 
-.social-btns{
+
+
+.btn.twitter{
   position: absolute;
-  top: 320%;
+  left: 0;
+  top: 1700%;
+ 
+
+}
+.btn.instagram{
+  position: absolute;
+  right: 0;
+  top: 1700%;
 }
 
 
