@@ -1,0 +1,27 @@
+.vtelegram {
+    position: fixed;
+    left: 10px;
+    z-index: 999;
+    bottom: 10px;
+    transition: all 0.35s ease-in-out;
+    border-radius: 100%;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.25), 0 7px 30px rgba(0, 156, 255, 0.4);
+    overflow: hidden;
+    animation: vtelegram 3s ease-in-out infinite;
+}
+.vtelegram img {
+    display: block;
+}
+
+@keyframes vtelegram {
+    0% {
+        transform: translatey(0);
+    }
+    50% {
+        box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+        transform: translatey(-15px);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
